@@ -1,0 +1,217 @@
+$font-stack: Montserrat, sans-serif
+$main-color: #2C2C2C
+$second-color: #E16858
+
+$desktop-small: 992px,
+$tablet: 768px,
+$mobile-big: 576px
+$mobile: 380px
+
+@mixin desktop-small
+    @media (max-width: $desktop-small)
+        @content
+
+@mixin tablet
+    @media (max-width: $tablet)
+        @content
+
+@mixin mobile-big
+    @media (max-width: $mobile-big)
+        @content
+
+@mixin mobile
+    @media (max-width: $mobile)
+        @content
+
+body
+    font: 100% $font-stack
+    color: $main-color
+    padding: 0px
+    margin: 0px
+    overflow: hidden
+
+main .wrapper
+    flex-direction: column
+    width: 97%
+
+    @include desktop-small
+        width: auto
+
+    @include mobile-big
+        padding: 0px 30px
+
+    @include mobile
+        padding: 0px 20px
+
+.stories
+    height: 220px
+    display: Flex
+    align-items: center
+    gap: 40px
+    border-top: 1px solid #F2F2F2
+    border-bottom: 1px solid #F2F2F2
+    overflow: auto
+    padding: 0px 30px
+
+    @include desktop-small
+        display: none
+
+    &::-webkit-scrollbar
+        width: 0
+
+    .stories__item__wrapper
+        border: 2px solid #F2F2F2
+        border-radius: 50%
+        width: 70px
+        height: 70px
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .stories__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 20px
+        min-width: 130px
+
+.page-banner
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+
+    .page-banner__wrapper
+        padding: 110px 0px 100px 0px
+        max-width: 1144px
+        text-align: center
+        @include desktop-small
+            padding-top: 20px
+        @include mobile-big
+            padding: 15px 0px
+            display: flex
+            flex-direction: column
+            gap: 20px
+
+        h1
+            font-size: 34px
+            font-weight: 400
+            line-height: 135%
+            text-transform: uppercase
+            @include desktop-small
+                font-size: 30px
+                margin: 0px
+                font-weight: 500
+            @include tablet
+                font-size: 24px
+            @include mobile
+                font-size: 20px
+
+        span
+            font-size: 16px
+            font-weight: 400
+            line-height: 150%
+            @include desktop-small
+                font-size: 15px
+
+    .page-banner__items
+        list-style: none
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(155px, 348px))
+        justify-content: center
+        gap: 30px
+        padding: 0px
+        width: 100%
+        @include desktop-small
+            display: none
+
+        @include mobile-big
+            display: flex
+        flex-wrap: wrap
+        gap: 15px
+
+        .page-banner__item
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 20px
+            border: 1px solid #F2F2F2
+            padding: 40px
+
+            @include mobile-big
+                flex-direction: row
+                justify-content: flex-start
+                padding: 20px 30px
+                width: 100%
+
+                @include mobile
+                padding: 20px
+
+            img
+                width: 64px
+                height: 64px
+
+            span
+                max-width: 268px
+                text-align: center
+                font-size: 16px
+                font-weight: 600
+                line-height: 150%
+
+                @include mobile-big
+                max-width: none
+                text-align: left
+
+                @include mobile
+                font-size: 14px
+
+.page-banner__items__tablet
+    display: none
+    @include desktop-small
+        display: flex
+        flex-direction: column
+        padding: 0px 30px
+        margin: 0px
+        width: 100%
+
+    @include mobile-big
+        display: none
+
+    .page-banner__items__tablet__column
+        display: flex
+        gap: 30px
+        padding-bottom: 30px
+        .page-banner__item
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 20px
+            border: 1px solid #F2F2F2
+            padding: 40px
+            width: 100%
+
+            @include desktop-small
+                flex-direction: row
+                padding: 30px
+
+            @include tablet
+                flex-direction: column
+
+            img
+                width: 64px
+                height: 64px
+            span
+                max-width: 268px
+                text-align: center
+                font-size: 16px
+                font-weight: 600
+                line-height: 150%
+
+                @include desktop-small
+                    font-size: 15px
+                    text-align: left
+
+                @include tablet
+                    text-align: center

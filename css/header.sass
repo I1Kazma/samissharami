@@ -1,0 +1,266 @@
+$font-stack: Montserrat, sans-serif
+$main-color: #2C2C2C
+$second-color: #E16858
+
+$desktop-small: 992px,
+$tablet: 768px,
+$mobile-big: 576px
+$mobile: 380px
+
+@mixin desktop-small
+    @media (max-width: $desktop-small)
+        @content
+
+@mixin tablet
+    @media (max-width: $tablet)
+        @content
+
+@mixin mobile-big
+    @media (max-width: $mobile-big)
+        @content
+
+@mixin mobile
+    @media (max-width: $mobile)
+        @content
+
+.wrapper
+    padding: 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include desktop-small
+        padding: 30px 31px
+        @include mobile-big
+        padding: 25px 20px
+
+path
+    transition: 150ms ease
+
+.header__logo
+    @include mobile-big
+    padding: 0px 20px
+    img
+        width: 100%
+
+.header__menu
+    font-size: 18px
+    font-weight: 400
+    line-height: 130%
+    display: flex
+    align-items: center
+    gap: 20px
+    text-transform: uppercase
+    @include desktop-small
+        display: none
+
+.header__menu-mobile
+    display: none
+    padding: 14px
+    border-radius: 6px
+    border: 1px solid #E1E1E1
+    cursor: pointer
+    transition: 150ms ease
+
+    &:hover, &:hover path
+        background: $second-color
+        fill: white
+
+    @include desktop-small
+        display: flex
+
+.header__address
+    display: flex
+    align-items: center
+    gap: 15px
+    @include desktop-small
+        display: none
+
+    img
+        width: 24px
+        height: 24px
+
+    .header__address__text
+        display: flex
+        flex-direction: column
+        gap: 4px
+
+        span
+            font-size: 14px
+            font-weight: 500
+            line-height: 140%
+
+.header__social
+    display: flex
+    width: 100%
+    max-width: 172px
+    justify-content: space-between
+
+    @include tablet
+        display: none
+
+    a
+        color: $main-color
+        padding: 10px
+        font-size: 24px
+        transition: 150ms ease
+        &:hover ,  &:hover path
+            color: #E4B5AF
+            stroke: #E4B5AF
+
+.header__panel
+    display: flex
+    width: 100%
+    max-width: 200px
+    justify-content: space-between
+
+    @include mobile-big
+        display: none
+
+    .header__panel__icon
+        display: flex
+        justify-content: center
+        align-items: center
+
+        a
+            padding: 10px
+            height: 24px
+
+        path
+            transition: 150ms ease
+
+        &:hover, &:hover path
+            stroke: #E4B5AF
+
+        .notification
+            width: 24px
+            height: 24px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            background: $second-color
+            color: white
+            font-size: 12px
+            font-weight: 700
+            letter-spacing: 0.6px
+
+.header__number
+    border: 1px solid #E1E1E1
+    border-radius: 6px
+    position: relative
+
+    .header__number__hover, .header__number__tel
+        transition: 150ms ease
+
+    .header__number__hover
+        transform: translateY(-3px)
+
+    a
+        padding: 14px 24px 14px 20px
+        text-decoration: none
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 12px
+        transition: 150ms ease
+        border-radius: 6px
+
+        &:hover
+            background: $second-color
+
+        path
+            transition: 150ms ease
+
+        &:hover path
+            stroke: white
+
+        &:hover .header__number__hover
+            height: auto
+            color: white
+            transform: translateY(0px)
+
+        &:hover .header__number__tel
+            height: 0px
+            overflow: hidden
+            transform: translateY(3px)
+
+        @include desktop-small
+            padding: 14px
+
+        span
+            color: #22242A
+            font-size: 17px
+            font-weight: 600
+            line-height: 135%
+            @include desktop-small
+                display: none
+
+        .header__number__hover
+            position: absolute
+            font-size: 17px
+            left: 56px
+            height: 0px
+            overflow: hidden
+
+.header__mobile
+    display: none
+    padding: 0px 33px
+
+    @include mobile-big
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: fixed
+        right: 0
+        left: 0
+        bottom: 0
+        background: white
+        height: 64px
+
+        box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.05)
+        border-top: 1px solid #E1E1E1
+        border-bottom: 1px solid #E1E1E1
+
+        a
+            color: $main-color
+            padding: 10px
+            font-size: 24px
+            height: 24px
+            transition: 150ms ease
+        a:hover ,  a:hover path
+            color: #E4B5AF
+            stroke: #E4B5AF
+
+    .header__panel__icon
+        display: flex
+        justify-content: center
+        align-items: center
+
+        a
+            padding: 10px
+            height: 24px
+
+        path
+            transition: 150ms ease
+
+        a:hover, a:hover path
+            stroke: #E4B5AF
+
+        .notification
+            width: 24px
+            height: 24px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            background: $second-color
+            color: white
+            font-size: 12px
+            font-weight: 700
+            letter-spacing: 0.6px
+            @include mobile
+                position: absolute
+                width: 6px
+                height: 6px
+                font-size: 0px
+                top: 12px

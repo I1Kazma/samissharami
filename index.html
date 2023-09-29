@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Cами с Шарами</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="header__menu">
+          <img src="img/menu.svg" alt="" />
+          <span>Меню</span>
+        </div>
+        <div class="header__menu-mobile">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M3 5H21V7H3V5Z" fill="#292D32" />
+            <path d="M3 11H21V13H3V11Z" fill="#292D32" />
+            <path d="M3 17H21V19H3V17Z" fill="#292D32" />
+          </svg>
+        </div>
+        <div class="header__address">
+          <img src="img/location.svg" alt="" />
+          <div class="header__address__text">
+            <span>г. Санкт-Петербург, ул. Ждановская, 29</span>
+            <span>c 9:00 до 21:00 без выходных</span>
+          </div>
+        </div>
+        <div class="header__social">
+          <a href="#">
+            <i class="bx bxl-telegram"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M17 20H7C4 20 2 18.5882 2 15.2941V8.70588C2 5.41176 4 4 7 4H17C20 4 22 5.41176 22 8.70588V15.2941C22 18.5882 20 20 17 20Z"
+                stroke="#2C2C2C"
+                stroke-width="1.8"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"
+                stroke="#2C2C2C"
+                stroke-width="1.8"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="header__logo">
+          <a href="#">
+            <img src="img/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="header__panel">
+          <div class="header__panel__icon">
+            <a href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="vuesax/linear/search-normal">
+                  <g id="search-normal">
+                    <path
+                      id="Vector"
+                      d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                      stroke="#2C2C2C"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      id="Vector_2"
+                      d="M22 22L20 20"
+                      stroke="#2C2C2C"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="header__panel__icon">
+            <a href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="vuesax/linear/heart">
+                  <g id="heart">
+                    <path
+                      id="Vector"
+                      d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z"
+                      stroke="#2C2C2C"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <div class="notification">1</div>
+          </div>
+          <div class="header__panel__icon">
+            <a href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.40002 6.5H15.6C19 6.5 19.34 8.09 19.57 10.03L20.47 17.53C20.76 19.99 20 22 16.5 22H7.51003C4.00003 22 3.24002 19.99 3.54002 17.53L4.44003 10.03C4.66003 8.09 5.00002 6.5 8.40002 6.5Z"
+                  stroke="#2C2C2C"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 8V4.5C8 3 9 2 10.5 2H13.5C15 2 16 3 16 4.5V8"
+                  stroke="#2C2C2C"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.41 17.03H8"
+                  stroke="#2C2C2C"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <div class="notification">7</div>
+          </div>
+        </div>
+        <div class="header__number">
+          <a href="tel:+79117072127" class="header__number__wrapper">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 17.697C21 18.021 20.9279 18.354 20.7747 18.678C20.6214 19.002 20.4231 19.308 20.1617 19.596C19.7201 20.082 19.2334 20.433 18.6835 20.658C18.1427 20.883 17.5568 21 16.9259 21C16.0065 21 15.024 20.784 13.9875 20.343C12.9509 19.902 11.9144 19.308 10.8868 18.561C9.85028 17.805 8.8678 16.968 7.9304 16.041C7.002 15.105 6.16375 14.124 5.41562 13.098C4.67651 12.072 4.08162 11.046 3.64897 10.029C3.21632 9.003 3 8.022 3 7.086C3 6.474 3.10816 5.889 3.32449 5.349C3.54081 4.8 3.88333 4.296 4.36104 3.846C4.93791 3.279 5.56885 3 6.23585 3C6.48823 3 6.74061 3.054 6.96595 3.162C7.2003 3.27 7.40761 3.432 7.56986 3.666L9.66099 6.609C9.82324 6.834 9.94041 7.041 10.0215 7.239C10.1027 7.428 10.1477 7.617 10.1477 7.788C10.1477 8.004 10.0846 8.22 9.95844 8.427C9.84126 8.634 9.67001 8.85 9.45368 9.066L8.76865 9.777C8.6695 9.876 8.62444 9.993 8.62444 10.137C8.62444 10.209 8.63345 10.272 8.65148 10.344C8.67852 10.416 8.70556 10.47 8.72359 10.524C8.88583 10.821 9.16525 11.208 9.56184 11.676C9.96745 12.144 10.4001 12.621 10.8688 13.098C11.3555 13.575 11.8242 14.016 12.302 14.421C12.7707 14.817 13.1582 15.087 13.4647 15.249C13.5098 15.267 13.5638 15.294 13.6269 15.321C13.699 15.348 13.7712 15.357 13.8523 15.357C14.0055 15.357 14.1227 15.303 14.2218 15.204L14.9069 14.529C15.1322 14.304 15.3485 14.133 15.5558 14.025C15.7631 13.899 15.9705 13.836 16.1958 13.836C16.3671 13.836 16.5473 13.872 16.7456 13.953C16.9439 14.034 17.1512 14.151 17.3766 14.304L20.36 16.419C20.5944 16.581 20.7566 16.77 20.8558 16.995C20.9459 17.22 21 17.445 21 17.697Z"
+                stroke="#292D32"
+                stroke-width="1.8"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M18 9C18 8.48571 17.5971 7.69714 16.9971 7.05429C16.4486 6.46286 15.72 6 15 6"
+                stroke="#292D32"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 9C21 5.68286 18.3171 3 15 3"
+                stroke="#292D32"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="header__number__tel">+7 (911) 707-21-27</span>
+            <span class="header__number__hover">Заказать звонок</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="header__mobile">
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M2.93125 10.6054L20.668 4.07987C21.4912 3.79608 22.2102 4.27149 21.9435 5.45928L21.945 5.45782L18.925 19.034C18.7012 19.9965 18.1018 20.2306 17.2632 19.7771L12.6642 16.5429L10.446 18.582C10.2007 18.8161 9.99376 19.0135 9.51853 19.0135L9.84506 14.5476L18.3685 7.20001C18.7395 6.88843 18.2857 6.7129 17.7967 7.02301L7.2635 13.3511L2.72277 11.9994C1.73705 11.701 1.71559 11.0589 2.93125 10.6054Z"
+              fill="#2C2C2C"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19 4.875C17.125 3 14.625 2 12 2C6.5 2 2 6.5 2 12C2 13.75 2.50001 15.5 3.37501 17L2 22L7.25002 20.625C8.75002 21.375 10.375 21.875 12 21.875C17.5 21.875 22 17.375 22 11.875C22 9.25 20.875 6.75 19 4.875ZM12 20.25C10.5 20.25 9.00001 19.875 7.75001 19.125L7.49999 19L4.37499 19.875L5.25001 16.875L4.99999 16.5C4.12499 15.125 3.74999 13.625 3.74999 12.125C3.74999 7.625 7.5 3.875 12 3.875C14.25 3.875 16.25 4.75 17.875 6.25C19.5 7.875 20.25 9.875 20.25 12.125C20.25 16.5 16.625 20.25 12 20.25ZM16.5 14C16.25 13.875 15 13.25 14.75 13.25C14.5 13.125 14.375 13.125 14.25 13.375C14.125 13.625 13.625 14.125 13.5 14.375C13.375 14.5 13.25 14.5 13 14.5C12.75 14.375 12 14.125 11 13.25C10.25 12.625 9.75001 11.75 9.62501 11.5C9.50001 11.25 9.62502 11.125 9.75002 11C9.87502 10.875 10 10.75 10.125 10.625C10.25 10.5 10.25 10.375 10.375 10.25C10.5 10.125 10.375 10 10.375 9.875C10.375 9.75 9.87501 8.5 9.62501 8C9.50001 7.625 9.25002 7.625 9.12502 7.625C9.00002 7.625 8.87498 7.625 8.62498 7.625C8.49998 7.625 8.24998 7.625 7.99998 7.875C7.74998 8.125 7.12501 8.75 7.12501 10C7.12501 11.25 7.99999 12.375 8.12499 12.625C8.24999 12.75 9.87498 15.375 12.375 16.375C14.5 17.25 14.875 17 15.375 17C15.875 17 16.875 16.375 17 15.875C17.25 15.25 17.25 14.75 17.125 14.75C17 14.125 16.75 14.125 16.5 14Z"
+              fill="#2C2C2C"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M17 20H7C4 20 2 18.5882 2 15.2941V8.70588C2 5.41176 4 4 7 4H17C20 4 22 5.41176 22 8.70588V15.2941C22 18.5882 20 20 17 20Z"
+              stroke="#2C2C2C"
+              stroke-width="1.8"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"
+              stroke="#2C2C2C"
+              stroke-width="1.8"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <div class="header__panel__icon">
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="vuesax/linear/search-normal">
+                <g id="search-normal">
+                  <path
+                    id="Vector"
+                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                    stroke="#2C2C2C"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M22 22L20 20"
+                    stroke="#2C2C2C"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="header__panel__icon">
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="vuesax/linear/heart">
+                <g id="heart">
+                  <path
+                    id="Vector"
+                    d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z"
+                    stroke="#2C2C2C"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </g>
+            </svg>
+          </a>
+          <div class="notification">1</div>
+        </div>
+        <div class="header__panel__icon">
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.40002 6.5H15.6C19 6.5 19.34 8.09 19.57 10.03L20.47 17.53C20.76 19.99 20 22 16.5 22H7.51003C4.00003 22 3.24002 19.99 3.54002 17.53L4.44003 10.03C4.66003 8.09 5.00002 6.5 8.40002 6.5Z"
+                stroke="#2C2C2C"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8 8V4.5C8 3 9 2 10.5 2H13.5C15 2 16 3 16 4.5V8"
+                stroke="#2C2C2C"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.41 17.03H8"
+                stroke="#2C2C2C"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <div class="notification">7</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="stories">
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span> Цветы</span>
+        </div>
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span> Новинки</span>
+        </div>
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span>Для девочек</span>
+        </div>
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span> Для мальчиков</span>
+        </div>
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span> Для девушек</span>
+        </div>
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span>Для мужчин</span>
+        </div>
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span>На выписку</span>
+        </div>
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span>Девичник</span>
+        </div>
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span>Для бизнеса</span>
+        </div>
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span>Свадьба</span>
+        </div>
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span>Коробки</span>
+        </div>
+        <div class="stories__item">
+          <div class="stories__item__wrapper">
+            <img src="img/location.svg" alt="" />
+          </div>
+          <span>Боксы</span>
+        </div>
+      </section>
+
+      <section class="page-banner">
+        <div class="wrapper">
+          <div class="page-banner__wrapper">
+            <h1>Композиции из воздушных шаров и стильные букеты</h1>
+            <span
+              >Компания «Сами с шарами» 8 лет на рынке и занимает лидирующие
+              позиции в сфере воздушного декора и флористики в Санкт-Петербурге.
+              Мы делаем сервис доставки воздушных шаров и цветов
+              безупречным.</span
+            >
+          </div>
+
+          <ul class="page-banner__items">
+            <li class="page-banner__item">
+              <img src="img/sale.svg" alt="" />
+              <span>Скидка на цветы - 10%</span>
+            </li>
+            <li class="page-banner__item">
+              <img src="img/delivery.svg" alt="" />
+              <span>Доставка 24/7</span>
+            </li>
+            <li class="page-banner__item">
+              <img src="img/high-level.svg" alt="" />
+              <span>Высокий уровень сервиса</span>
+            </li>
+
+            <li class="page-banner__item">
+              <img src="img/new-items.svg" alt="" />
+              <span
+                >Самые стильные и трендовые новинки в мире аэродизайна и
+                флористики</span
+              >
+            </li>
+            <li class="page-banner__item">
+              <img src="img/materials.svg" alt="" />
+              <span
+                >Использование качественных материалов ведущих
+                производителей</span
+              >
+            </li>
+          </ul>
+
+          <ul class="page-banner__items__tablet">
+            <div class="page-banner__items__tablet__column">
+              <li class="page-banner__item">
+                <img src="img/sale.svg" alt="" />
+                <span>Скидка на цветы - 10%</span>
+              </li>
+              <li class="page-banner__item">
+                <img src="img/delivery.svg" alt="" />
+                <span>Доставка 24/7</span>
+              </li>
+              <li class="page-banner__item">
+                <img src="img/high-level.svg" alt="" />
+                <span>Высокий уровень сервиса</span>
+              </li>
+            </div>
+            <div class="page-banner__items__tablet__column">
+              <li class="page-banner__item">
+                <img src="img/new-items.svg" alt="" />
+                <span
+                  >Самые стильные и трендовые новинки в мире аэродизайна и
+                  флористики</span
+                >
+              </li>
+              <li class="page-banner__item">
+                <img src="img/materials.svg" alt="" />
+                <span
+                  >Использование качественных материалов ведущих
+                  производителей</span
+                >
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
