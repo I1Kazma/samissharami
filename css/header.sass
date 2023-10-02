@@ -28,19 +28,19 @@ $mobile: 380px
     @media (max-width: $mobile)
         @content
 
-.wrapper
-    padding: 30px
-    display: flex
-    justify-content: space-between
-    align-items: center
-    @include desktop-small
-        padding: 30px 31px
-        @include mobile-big
-        padding: 25px 20px
+header .wrapper
+            padding: 30px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            @include desktop-small
+                padding: 30px 31px
+            @include mobile-big
+                padding: 25px 20px
 
 header .wrapper > div:not(:last-child, :first-child)
-        padding-left: 10px
-        padding-right: 10px
+            padding-left: 10px
+            padding-right: 10px
 
 path
     transition: 150ms ease

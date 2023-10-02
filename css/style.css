@@ -8,7 +8,11 @@ body {
 
 main .wrapper {
   flex-direction: column;
+  padding: 0px 30px;
   width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 992px) {
   main .wrapper {

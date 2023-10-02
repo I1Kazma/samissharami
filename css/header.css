@@ -1,15 +1,20 @@
-.wrapper {
+header .wrapper {
   padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 992px) {
-  .wrapper {
+  header .wrapper {
     padding: 30px 31px;
+  }
+}
+@media (max-width: 576px) {
+  header .wrapper {
     padding: 25px 20px;
   }
 }
+
 header .wrapper > div:not(:last-child, :first-child) {
   padding-left: 10px;
   padding-right: 10px;
