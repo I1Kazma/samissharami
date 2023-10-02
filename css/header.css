@@ -1,29 +1,29 @@
-h1, h2, h3, h4, h5, span {
+h1, h2, h3, h4, h5, span, ul {
   margin: 0px;
 }
 
 header .wrapper {
-  padding: 30px;
+  padding: 23px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 992px) {
   header .wrapper {
-    padding: 30px 31px;
+    padding: 30px 31px 0px 31px;
   }
 }
 @media (max-width: 992px) and (max-width: 576px) {
   header .wrapper {
-    padding: 25px 20px;
+    padding: 25px 20px 0px 20px;
   }
 }
 
 header .wrapper > div:not(:last-child, :first-child) {
   padding-left: 10px;
   padding-right: 10px;
+  padding: 14px;
 }
-
 path {
   transition: 150ms ease;
 }
