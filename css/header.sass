@@ -2,10 +2,15 @@ $font-stack: Montserrat, sans-serif
 $main-color: #2C2C2C
 $second-color: #E16858
 
+$desktop-mid: 1340px
 $desktop-small: 992px,
 $tablet: 768px,
 $mobile-big: 576px
 $mobile: 380px
+
+@mixin desktop-mid
+    @media (max-width: $desktop-mid)
+        @content
 
 @mixin desktop-small
     @media (max-width: $desktop-small)
@@ -33,6 +38,10 @@ $mobile: 380px
         @include mobile-big
         padding: 25px 20px
 
+header .wrapper > div:not(:last-child, :first-child)
+        padding-left: 10px
+        padding-right: 10px
+
 path
     transition: 150ms ease
 
@@ -50,6 +59,17 @@ path
     align-items: center
     gap: 20px
     text-transform: uppercase
+
+    &:hover .burger path
+        animation: golden__burger 150ms forwards
+
+    @keyframes golden__burger
+        0%
+            fill: #2C2C2C
+
+        100%
+            fill: #E4B5AF
+
     @include desktop-small
         display: none
 
@@ -184,7 +204,7 @@ path
             overflow: hidden
             transform: translateY(3px)
 
-        @include desktop-small
+        @include desktop-mid
             padding: 14px
 
         span
@@ -192,7 +212,7 @@ path
             font-size: 17px
             font-weight: 600
             line-height: 135%
-            @include desktop-small
+            @include desktop-mid
                 display: none
 
         .header__number__hover
