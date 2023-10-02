@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, span {
+  margin: 0px;
+}
+
 header .wrapper {
   padding: 30px;
   display: flex;
@@ -9,7 +13,7 @@ header .wrapper {
     padding: 30px 31px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) and (max-width: 576px) {
   header .wrapper {
     padding: 25px 20px;
   }
@@ -39,6 +43,9 @@ path {
   align-items: center;
   gap: 20px;
   text-transform: uppercase;
+}
+.header__menu:hover .burger {
+  cursor: pointer;
 }
 .header__menu:hover .burger path {
   animation: golden__burger 150ms forwards;

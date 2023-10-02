@@ -75,6 +75,9 @@ main .wrapper {
   padding: 110px 0px 100px 0px;
   max-width: 1144px;
   text-align: center;
+  display: Flex;
+  flex-direction: column;
+  gap: 20px;
 }
 @media (max-width: 992px) {
   .page-banner .page-banner__wrapper {
